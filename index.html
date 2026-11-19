@@ -289,11 +289,11 @@ ol.steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column;
     }).join(''));
 
     var soc = [
-      ['web', 'Xcubated website', 'https://www.xcubated.com'],
-      ['linkedin', 'Xcubated on LinkedIn', 'https://www.linkedin.com/company/xcubated-business-solutions'],
-      ['facebook', 'Xcubated on Facebook', 'https://www.facebook.com/Xcubated/'],
-      ['youtube', 'Xcubated on YouTube', 'https://www.youtube.com/@xcubatedbusinesssolutions1390'],
-      ['instagram', 'Xcubated on Instagram', 'https://www.instagram.com/xcubated/']
+      ['web', 'Xcubated website', 'https://web.xcubated.com'],
+      ['linkedin', 'Xcubated on LinkedIn', 'https://linkedin.xcubated.com'],
+      ['facebook', 'Xcubated on Facebook', 'https://facebook.xcubated.com'],
+      ['youtube', 'Xcubated on YouTube', 'https://youtube.xcubated.com'],
+      ['instagram', 'Xcubated on Instagram', 'https://instagram.xcubated.com']
     ];
     var socials = tbl('<tr>' + soc.map(function (s, i) {
       return '<td style="padding:0 ' + (i === 4 ? 0 : 8) + 'px 0 0;"><a href="' + s[2] + '" style="text-decoration:none;">' + icon(s[0], s[1]) + '</a></td>';
@@ -319,7 +319,7 @@ ol.steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column;
     var val = function (s) { return '<td valign="top" style="padding:0 0 4px 0;font-family:' + FONT + ';font-size:13px;line-height:18px;color:#091421;">' + s + '</td>'; };
     var lk = function (u, s) { return '<a href="' + u + '" style="color:#03243A;text-decoration:none;font-weight:bold;">' + s + '</a>'; };
     var meta = tbl(
-      '<tr>' + lab('PRODUCTS') + val(lk('https://www.xage.care', 'XageCare') + sep + lk('https://www.xcubated.com/products&amp;solutions/spatialAndAr.html', 'XR') + sep + lk('https://www.widea.digital', 'CMS')) + '</tr>' +
+      '<tr>' + lab('PRODUCTS') + val(lk('https://www.xage.care', 'XageCare') + sep + lk('https://spacialar.xcubated.com', 'XR') + sep + lk('https://www.widea.digital', 'CMS')) + '</tr>' +
       '<tr>' + lab('PRESENCE') + val(['UK', 'US', 'India', 'Australia', 'Europe'].join(sep)) + '</tr>' +
       '<tr>' + lab('CREDENTIALS') + val(['ISO 9001:2015', 'ISO/IEC 27001:2022', 'GDPR Compliant'].join(sep)) + '</tr>');
     var dstyle = 'font-family:' + FONT + ';font-size:11px;line-height:15px;color:#111A25;';
